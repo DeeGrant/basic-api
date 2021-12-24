@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 
 app.use(cors())
 
@@ -47,6 +47,6 @@ app.get('/api/flowers/:flower', (req, res) => {
     }
 })
 
-app.listen(process.env.PORT || PORT, () => {
+app.listen(PORT, () => {
     console.log(`Server running on port: ${PORT}`)
 })
