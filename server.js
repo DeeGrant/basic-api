@@ -34,6 +34,11 @@ let flowers = {
         'what': 'Lily',
         'color': 'Orange',
         'number': 1
+    },
+    'unknown': {
+        what: 'Unknown',
+        color: 'unknown',
+        number: 'zero'
     }
 }
 
@@ -43,7 +48,7 @@ app.get('/api/flowers/:flower', (req, res) => {
     if (flowers[flower]) {
         res.json(flowers[flower])
     } else {
-        res.json(flowers['lily'])
+        res.json(flowers['unknown'])
     }
 })
 
