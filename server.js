@@ -14,9 +14,9 @@ app.get('/js/main.js', (request, response) => {
 })
 
 let roses = {
-    'what': 'Roses',
-    'color': 'Red',
-    'number': 24
+    what: 'roses',
+    color: 'red',
+    number: 24
 }
 
 app.get('/api/roses', (request, response) => {
@@ -24,21 +24,21 @@ app.get('/api/roses', (request, response) => {
 })
 
 let flowers = {
-    'roses': roses,
-    'daisies': {
-        'what': 'Daisies',
-        'color': 'White',
-        'number': 3
+    roses: roses,
+    daisies: {
+        what: 'daisies',
+        color: 'white',
+        number: 3
     },
-    'lily': {
-        'what': 'Lily',
-        'color': 'Orange',
-        'number': 1
+    lily: {
+        what: 'lily',
+        color: 'orange',
+        number: 1
     },
-    'unknown': {
-        what: 'Unknown',
+    unknown: {
+        what: 'unknowns',
         color: 'unknown',
-        number: 'zero'
+        number: 0
     }
 }
 
